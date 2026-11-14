@@ -1,0 +1,181 @@
+
+/* =================================
+   PROJECT DETAILS PAGE
+================================= */
+
+.project-details-page {
+  min-height: 100vh;
+  padding: 110px 0 90px;
+  background:
+    radial-gradient(
+      ellipse at 85% 15%,
+      rgba(201, 164, 92, 0.07),
+      transparent 40%
+    ),
+    #0b0b0b;
+  color: #f5f5f5;
+}
+
+.project-details-container {
+  width: min(1100px, 90%);
+  margin: 0 auto;
+}
+
+/* Back Link */
+
+.project-back-link,
+.back-to-projects {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #c9a45c;
+  font-size: 13px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.project-back-link:hover,
+.back-to-projects:hover {
+  color: #e5c98b;
+  gap: 12px;
+}
+
+/* Heading */
+
+.project-details-heading {
+  max-width: 750px;
+  margin: 45px 0 35px;
+}
+
+.project-details-title {
+  margin-top: 12px;
+  color: #f5f5f5;
+  font-size: clamp(34px, 5vw, 58px);
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.project-details-description {
+  max-width: 650px;
+  margin-top: 18px;
+  color: #999;
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+/* Main Image */
+
+.project-details-image {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #171717;
+  border: 1px solid rgba(201, 164, 92, 0.2);
+  border-radius: 5px;
+}
+
+.project-details-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Project Information */
+
+.project-details-info {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 35px;
+  margin-top: 35px;
+  padding: 30px 0;
+  border-top: 1px solid rgba(201, 164, 92, 0.2);
+  border-bottom: 1px solid rgba(201, 164, 92, 0.2);
+}
+
+.project-info-label {
+  color: #c9a45c;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+}
+
+.project-info-value {
+  margin-top: 12px;
+  color: #f5f5f5;
+  font-size: 16px;
+}
+
+.project-details-software {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 12px;
+}
+
+.project-details-software span {
+  padding: 8px 13px;
+  color: #e5c98b;
+  background: #1a1a1a;
+  border: 1px solid rgba(201, 164, 92, 0.2);
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+/* Not Found */
+
+.project-not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 30px;
+  background: #0b0b0b;
+  text-align: center;
+}
+
+.project-not-found .projects-title {
+  margin: 15px 0 25px;
+}
+
+.back-to-projects {
+  margin-top: 10px;
+}
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+  .project-details-page {
+    padding: 90px 0 70px;
+  }
+
+  .project-details-info {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .project-details-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-details-page {
+    padding: 75px 0 55px;
+  }
+
+  .project-details-heading {
+    margin: 35px 0 25px;
+  }
+
+  .project-details-image {
+    aspect-ratio: 4 / 3;
+  }
+
+  .project-details-info {
+    padding: 22px 0;
+  }
+}

@@ -9,13 +9,12 @@
   padding: 110px 0;
   background:
     radial-gradient(
-      ellipse at 15% 60%,
+      ellipse at 85% 20%,
       rgba(201, 164, 92, 0.06),
-      transparent 40%
+      transparent 38%
     ),
     #0b0b0b;
   color: #f5f5f5;
-  overflow: hidden;
 }
 
 .skills-container {
@@ -24,193 +23,406 @@
 }
 
 /* =================================
-   HEADING
+   SECTION HEADING
 ================================= */
 
 .skills-heading {
   max-width: 650px;
-  margin-bottom: 55px;
-}
-
-.skills-heading .section-label {
-  color: #c9a45c;
-  font-size: 11px;
-  letter-spacing: 5px;
-  font-weight: 700;
-  margin-bottom: 16px;
+  margin: 0 auto 75px;
+  text-align: center;
 }
 
 .skills-title {
+  margin-top: 15px;
   font-family: "Playfair Display", serif;
-  font-size: clamp(36px, 4.5vw, 55px);
-  font-weight: 600;
+  font-size: clamp(36px, 5vw, 55px);
+  font-weight: 500;
   line-height: 1.2;
-  color: #f5f5f5;
 }
 
 .skills-title span {
-  color: #d6ad65;
+  color: #c9a45c;
 }
 
 .skills-subtitle {
-  max-width: 500px;
-  margin-top: 20px;
+  max-width: 550px;
+  margin: 18px auto 0;
   color: #999;
   font-size: 14px;
   line-height: 1.8;
 }
 
 /* =================================
-   SKILLS GRID
+   GROUP
 ================================= */
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 20px;
+.skills-group {
+  margin-bottom: 70px;
+}
+
+.skills-group-title {
+  margin-bottom: 15px;
+  color: #e5c98b;
+  font-family: "Playfair Display", serif;
+  font-size: 29px;
+  font-weight: 500;
+}
+
+.skills-group-description {
+  margin-bottom: 25px;
+  color: #999;
+  font-size: 13px;
+  line-height: 1.7;
 }
 
 /* =================================
-   SKILL CARD
+   TECHNICAL SKILLS
 ================================= */
 
-.skill-card {
-  position: relative;
+.technical-skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.technical-skill-card {
+  padding: 30px;
+  background: linear-gradient(145deg, #171717, #101010);
+  border: 1px solid rgba(201, 164, 92, 0.2);
+  transition: 0.35s ease;
+}
+
+.technical-skill-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(201, 164, 92, 0.65);
+}
+
+.technical-skill-number {
+  margin-bottom: 13px;
+  color: rgba(201, 164, 92, 0.65);
+  font-size: 12px;
+  letter-spacing: 3px;
+}
+
+.technical-skill-title {
+  margin-bottom: 20px;
+  color: #f5f5f5;
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.technical-skill-list {
   display: flex;
   flex-direction: column;
-  min-height: 290px;
-  padding: 28px 23px;
-  background: linear-gradient(
-    145deg,
-    rgba(255, 255, 255, 0.045),
-    rgba(255, 255, 255, 0.01)
-  );
-  border: 1px solid rgba(201, 164, 92, 0.2);
-  transition:
-    transform 0.35s ease,
-    border-color 0.35s ease,
-    background 0.35s ease;
+  gap: 12px;
 }
 
-.skill-card:hover {
-  transform: translateY(-8px);
-  border-color: rgba(201, 164, 92, 0.7);
-  background: linear-gradient(
-    145deg,
-    rgba(201, 164, 92, 0.09),
-    rgba(255, 255, 255, 0.015)
-  );
-}
-
-.skill-card-top {
+.technical-skill-item {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 30px;
+  align-items: flex-start;
+  gap: 10px;
+  color: #aaa;
+  font-size: 13px;
+  line-height: 1.6;
 }
 
-.skill-icon {
-  width: 52px;
-  height: 52px;
+.skill-bullet {
+  flex-shrink: 0;
+  color: #c9a45c;
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* =================================
+   CAROUSEL CONTROLS
+================================= */
+
+.skills-carousel {
+  position: relative;
+  width: 100%;
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.carousel-arrow {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #e5c98b;
-  background: rgba(201, 164, 92, 0.1);
-  border: 1px solid rgba(201, 164, 92, 0.25);
+  width: 42px;
+  height: 42px;
+  color: #c9a45c;
+  background: #171717;
+  border: 1px solid rgba(201, 164, 92, 0.35);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.skill-number {
-  color: rgba(201, 164, 92, 0.55);
-  font-family: "Playfair Display", serif;
-  font-size: 16px;
+.carousel-arrow:hover {
+  color: #080808;
+  background: #c9a45c;
+  border-color: #c9a45c;
 }
 
-.skill-name {
-  color: #f5f5f5;
-  font-family: "Playfair Display", serif;
-  font-size: 23px;
-  font-weight: 600;
-  margin-bottom: 6px;
+/* =================================
+   CAROUSEL TRACK
+================================= */
+
+.skills-carousel-track {
+  display: flex;
+  gap: 18px;
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+  padding: 3px 2px 12px;
 }
 
-.skill-category {
-  color: #d6ad65;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  margin-bottom: 14px;
+.skills-carousel-track::-webkit-scrollbar {
+  display: none;
 }
 
-.skill-description {
-  color: #999;
-  font-size: 12px;
-  line-height: 1.8;
-  margin-bottom: 25px;
-}
+/* =================================
+   SOFTWARE CARD
+================================= */
 
-.skill-card-footer {
+.software-card {
+  display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: auto;
-  padding-top: 15px;
-  border-top: 1px solid rgba(201, 164, 92, 0.15);
-  color: #e5c98b;
-  font-size: 11px;
-  font-weight: 600;
+  gap: 15px;
+  flex: 0 0 275px;
+  min-width: 0;
+  min-height: 112px;
+  padding: 16px;
+  background: #151515;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 5px;
+  text-decoration: none;
+  scroll-snap-align: start;
+  transition: 0.3s ease;
 }
 
-.skill-arrow {
-  font-size: 19px;
+.software-card:hover {
+  transform: translateY(-4px);
+  background: #1b1b1b;
+  border-color: rgba(201, 164, 92, 0.6);
+}
+
+/* =================================
+   LOGO
+================================= */
+
+
+/* Larger Software Logos */
+
+.software-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 58px;
+  height: 54px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.software-logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+
+/* =================================
+   SOFTWARE INFORMATION
+================================= */
+
+.software-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.software-name {
+  color: #f5f5f5;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.software-category {
+  margin-top: 4px;
+  color: #888;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+/* =================================
+   EXPLORE PROJECTS
+================================= */
+
+.software-action {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 12px;
+  color: #c9a45c;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.software-action svg {
+  flex-shrink: 0;
   transition: transform 0.3s ease;
 }
 
-.skill-card:hover .skill-arrow {
+.software-card:hover .software-action svg {
   transform: translate(3px, -3px);
 }
 
 /* =================================
-   TABLET
+   TOOLS
 ================================= */
 
-@media (max-width: 1000px) {
-  .skills-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
+.tools-group {
+  margin-bottom: 0;
+}
+
+.tool-card {
+  cursor: default;
 }
 
 /* =================================
-   MOBILE
+   RESPONSIVE
 ================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .skills-section {
     padding: 75px 0;
   }
 
   .skills-container {
-    width: 90%;
+    width: 92%;
   }
 
   .skills-heading {
-    margin-bottom: 35px;
+    margin-bottom: 50px;
   }
 
-  .skills-grid {
+  .skills-group {
+    margin-bottom: 55px;
+  }
+
+  .skills-group-title {
+    font-size: 25px;
+  }
+
+  .technical-skills-grid {
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 16px;
   }
 
-  .skill-card {
-    min-height: 250px;
-    padding: 23px 20px;
+  .technical-skill-card {
+    padding: 25px;
   }
 
-  .skill-card-top {
-    margin-bottom: 22px;
+  .software-card {
+    flex-basis: 235px;
+    min-height: 96px;
+    padding: 11px;
   }
 
-  .skill-name {
-    font-size: 21px;
+  .software-logo {
+    width: 82px;
+    height: 74px;
+  }
+
+  .carousel-arrow {
+    width: 38px;
+    height: 38px;
   }
 }
+
+@media (max-width: 480px) {
+  .software-card {
+    flex-basis: 225px;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .software-logo {
+    width: 76px;
+    height: 70px;
+  }
+
+  .software-name {
+    font-size: 13px;
+  }
+
+  .software-action {
+    font-size: 9px;
+  }
+}
+
+
+.software-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 0 0 245px;
+  min-width: 0;
+  min-height: 100px;
+  padding: 12px;
+  background: #1a1a1a;
+  border: 1px solid rgba(201, 164, 92, 0.22);
+  border-radius: 6px;
+  text-decoration: none;
+  scroll-snap-align: start;
+  transition: 0.3s ease;
+}
+
+.software-card:hover {
+  transform: translateY(-3px);
+  background: #222;
+  border-color: rgba(201, 164, 92, 0.75);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+  
+
+.software-name {
+  color: #f5f5f5;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.software-category {
+  margin-top: 4px;
+  color: #aaa;
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.software-action {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 9px;
+  color: #e5c98b;
+  font-size: 10px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+

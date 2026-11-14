@@ -1,4 +1,4 @@
-import profileImage from "../../assets/images/profile.png";
+// import profileImage from "../../assets/images/profile.png";
 import { Box, Flex, Text, Button } from "@chakra-ui/react";
 // Lucide icons
 import {
@@ -33,7 +33,7 @@ const Hero = () => {
         <Box className="hero-portrait">
           <Box className="portrait-frame">
             <img
-              src={profileImage}
+              src=''
               alt="Civil Engineer"
               className="portrait-image"
             />
