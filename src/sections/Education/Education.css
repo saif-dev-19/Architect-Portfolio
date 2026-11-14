@@ -1,0 +1,234 @@
+
+/* =================================
+   EDUCATION SECTION
+================================= */
+
+.education-section {
+  position: relative;
+  width: 100%;
+  padding: 110px 0;
+  background:
+    radial-gradient(
+      ellipse at 85% 50%,
+      rgba(201, 164, 92, 0.06),
+      transparent 40%
+    ),
+    #080808;
+  color: #f5f5f5;
+  overflow: hidden;
+}
+
+.education-container {
+  width: min(1200px, 90%);
+  margin: 0 auto;
+}
+
+/* =================================
+   HEADING
+================================= */
+
+.education-heading {
+  max-width: 650px;
+  margin-bottom: 65px;
+}
+
+.education-heading .section-label {
+  color: #c9a45c;
+  font-size: 11px;
+  letter-spacing: 5px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.education-title {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(36px, 4.5vw, 55px);
+  font-weight: 600;
+  line-height: 1.2;
+  color: #f5f5f5;
+}
+
+.education-title span {
+  color: #d6ad65;
+}
+
+.education-subtitle {
+  max-width: 480px;
+  margin-top: 20px;
+  color: #999;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* =================================
+   EDUCATION TIMELINE
+================================= */
+
+.education-list {
+  position: relative;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 850px;
+  margin-left: 10px;
+}
+
+.education-list::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  left: 7px;
+  width: 1px;
+  background: linear-gradient(
+    to bottom,
+    #c9a45c,
+    rgba(201, 164, 92, 0.12)
+  );
+}
+
+/* =================================
+   EDUCATION CARD
+================================= */
+
+.education-card {
+  position: relative;
+  display: flex;
+  gap: 35px;
+  width: 100%;
+}
+
+.education-marker {
+  position: relative;
+  z-index: 2;
+  width: 16px;
+  min-width: 16px;
+  height: 16px;
+  margin-top: 25px;
+  border: 1px solid #c9a45c;
+  border-radius: 50%;
+  background: #080808;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.education-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #e5c98b;
+  box-shadow: 0 0 10px rgba(229, 201, 139, 0.7);
+}
+
+.education-card-content {
+  flex: 1;
+  padding: 25px 30px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.035),
+    rgba(255, 255, 255, 0.01)
+  );
+  border: 1px solid rgba(201, 164, 92, 0.2);
+  transition: all 0.3s ease;
+}
+
+.education-card-content:hover {
+  border-color: rgba(201, 164, 92, 0.65);
+  transform: translateX(6px);
+  background: rgba(201, 164, 92, 0.04);
+}
+
+/* Card top */
+
+.education-card-top {
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 18px;
+}
+
+.education-period {
+  color: #e5c98b;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.education-status {
+  color: #c9a45c;
+  font-size: 10px;
+  padding: 6px 12px;
+  border: 1px solid rgba(201, 164, 92, 0.3);
+  border-radius: 30px;
+}
+
+/* Card details */
+
+.education-degree {
+  color: #f5f5f5;
+  font-family: "Playfair Display", serif;
+  font-size: 23px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.education-subject {
+  color: #d6ad65;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.education-institution {
+  color: #999;
+  font-size: 13px;
+}
+
+/* =================================
+   MOBILE RESPONSIVE
+================================= */
+
+@media (max-width: 768px) {
+  .education-section {
+    padding: 75px 0;
+  }
+
+  .education-container {
+    width: 90%;
+  }
+
+  .education-heading {
+    margin-bottom: 40px;
+  }
+
+  .education-list {
+    gap: 22px;
+    margin-left: 0;
+  }
+
+  .education-card {
+    gap: 18px;
+  }
+
+  .education-card-content {
+    padding: 20px 16px;
+  }
+
+  .education-card-top {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .education-degree {
+    font-size: 19px;
+  }
+
+  .education-subject {
+    font-size: 13px;
+  }
+
+  .education-institution {
+    font-size: 12px;
+  }
+}
