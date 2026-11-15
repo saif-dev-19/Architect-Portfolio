@@ -287,14 +287,20 @@ const ProjectDetails = () => {
 
         {/* Category Galleries */}
         <Box className="project-category-galleries">
-          {imageCategories.map((category) => (
-            <CategoryGallery
-              key={category}
-              title={category}
-              images={categoryImages[category] || []}
-              projectTitle={project.title}
-            />
-          ))}
+          {imageCategories
+            .filter((category) => {
+              const images = categoryImages[category];
+
+              return Array.isArray(images) && images.length > 0;
+            })
+            .map((category) => (
+              <CategoryGallery
+                key={category}
+                title={category}
+                images={categoryImages[category]}
+                projectTitle={project.title}
+              />
+            ))}
         </Box>
 
         {/* Project PDF Button */}
