@@ -28,8 +28,16 @@
 
 .skills-heading {
   max-width: 650px;
-  margin: 0 auto 75px;
-  text-align: center;
+  margin: 0 0 75px;
+  text-align: left;
+}
+
+.skills-subtitle {
+  max-width: 550px;
+  margin: 18px 0 0;
+  color: #999;
+  font-size: 14px;
+  line-height: 1.8;
 }
 
 .skills-title {
@@ -44,13 +52,7 @@
   color: #c9a45c;
 }
 
-.skills-subtitle {
-  max-width: 550px;
-  margin: 18px auto 0;
-  color: #999;
-  font-size: 14px;
-  line-height: 1.8;
-}
+
 
 /* =================================
    GROUP

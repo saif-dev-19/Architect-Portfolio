@@ -10,6 +10,9 @@ import Skills from "./sections/Skills/Skills";
 import Projects from "./sections/Projects/Projects";
 
 import ProjectDetails from "./sections/Projects/ProjectDetails";
+import Services from "./sections/Services/Services";
+import Contact from "./sections/Contact/Contact";
+import Footer from "./sections/Footer/Footer";
 
 function HomePage() {
   const location = useLocation();
@@ -42,7 +45,10 @@ function HomePage() {
         <Education />
         <Skills />
         <Projects />
+        <Services />
+        <Contact />
       </main>
+      <Footer />
     </>
   );
 }
