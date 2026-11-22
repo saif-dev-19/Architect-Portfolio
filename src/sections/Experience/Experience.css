@@ -1,0 +1,282 @@
+
+/* ================================
+   EXPERIENCE SECTION
+================================ */
+
+.experience-section {
+  position: relative;
+  width: 100%;
+  padding: 110px 7%;
+  background: #0b0b0b;
+  color: #f5f5f5;
+  overflow: hidden;
+}
+
+.experience-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ================================
+   SECTION HEADER
+================================ */
+
+.experience-header {
+  margin-bottom: 70px;
+}
+
+.experience-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #c5a46d;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.experience-title {
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 600;
+  letter-spacing: -1.5px;
+  line-height: 1.2;
+  color: #f5f5f5;
+}
+
+.experience-title span {
+  color: #c5a46d;
+}
+
+.experience-subtitle {
+  max-width: 600px;
+  margin-top: 20px;
+  font-size: 15px;
+  line-height: 1.8;
+  color: #929292;
+}
+
+/* ================================
+   TIMELINE
+================================ */
+
+.experience-timeline {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.experience-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 25px;
+}
+
+/* Timeline line */
+
+.experience-item:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: 30px;
+  bottom: -40px;
+  width: 1px;
+  background: rgba(197, 164, 109, 0.25);
+}
+
+/* Timeline marker */
+
+.experience-timeline-marker {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding-top: 28px;
+}
+
+.experience-marker-dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #c5a46d;
+  border-radius: 50%;
+  background: #0b0b0b;
+  box-shadow: 0 0 15px rgba(197, 164, 109, 0.2);
+}
+
+/* ================================
+   EXPERIENCE CARD
+================================ */
+
+.experience-card {
+  padding: 35px;
+  background: #111111;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 4px;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.experience-card:hover {
+  border-color: rgba(197, 164, 109, 0.4);
+  transform: translateY(-4px);
+}
+
+.experience-card-top {
+  margin-bottom: 25px;
+}
+
+/* Heading */
+
+.experience-role {
+  font-size: 24px;
+  font-weight: 600;
+  color: #f5f5f5;
+  margin-bottom: 10px;
+}
+
+.experience-company {
+  font-size: 15px;
+  font-weight: 500;
+  color: #c5a46d;
+  margin-bottom: 8px;
+}
+
+.experience-location {
+  font-size: 13px;
+  color: #777777;
+}
+
+/* Meta */
+
+.experience-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.experience-period {
+  color: #c5a46d;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+
+.experience-type {
+  padding: 6px 12px;
+  border: 1px solid rgba(197, 164, 109, 0.25);
+  border-radius: 2px;
+  color: #a5a5a5;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+/* Description */
+
+.experience-description {
+  font-size: 14px;
+  line-height: 1.9;
+  color: #999999;
+  margin-bottom: 25px;
+}
+
+/* Responsibilities */
+
+.experience-responsibilities {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.experience-responsibility {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 13px;
+  line-height: 1.7;
+  color: #b0b0b0;
+}
+
+.experience-responsibility svg {
+  flex-shrink: 0;
+  margin-top: 3px;
+  color: #c5a46d;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .experience-section {
+    padding: 80px 6%;
+  }
+
+  .experience-header {
+    margin-bottom: 45px;
+  }
+
+  .experience-title {
+    letter-spacing: -0.8px;
+  }
+
+  .experience-subtitle {
+    font-size: 14px;
+  }
+
+  .experience-item {
+    grid-template-columns: 22px 1fr;
+    gap: 15px;
+  }
+
+  .experience-item:not(:last-child)::before {
+    left: 10px;
+  }
+
+  .experience-timeline-marker {
+    padding-top: 25px;
+  }
+
+  .experience-card {
+    padding: 25px 20px;
+  }
+
+  .experience-role {
+    font-size: 20px;
+  }
+
+  .experience-meta {
+    align-items: flex-start;
+  }
+
+  .experience-card-top {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .experience-section {
+    padding: 65px 5%;
+  }
+
+  .experience-card {
+    padding: 20px 16px;
+  }
+
+  .experience-role {
+    font-size: 18px;
+  }
+
+  .experience-description {
+    font-size: 13px;
+  }
+
+  .experience-responsibility {
+    font-size: 12px;
+  }
+
+  .experience-eyebrow {
+    font-size: 10px;
+    letter-spacing: 2px;
+  }
+}

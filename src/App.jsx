@@ -13,6 +13,7 @@ import ProjectDetails from "./sections/Projects/ProjectDetails";
 import Services from "./sections/Services/Services";
 import Contact from "./sections/Contact/Contact";
 import Footer from "./sections/Footer/Footer";
+import Experience from "./sections/Experience/Experience";
 
 function HomePage() {
   const location = useLocation();
@@ -42,6 +43,7 @@ function HomePage() {
       <main>
         <Hero />
         <About />
+        <Experience />
         <Education />
         <Skills />
         <Projects />

@@ -1,7 +1,7 @@
 
 import project1 from "../assets/images/projects/Residential Villa/3d-exterior/classical villa.jpg";
 import project2 from "../assets/images/projects/Residential Complete Project/3d-exterior/VIEW 1.jpeg";
-import project3 from "../assets/images/project3.jpg";
+import project3 from "../assets/images/projects/Interior Material Palette/3d-interior/image_1.png";
 import project4 from "../assets/images/project4.jpg";
 import project5 from "../assets/images/project5.jpg";
 import project6 from "../assets/images/project6.jpg";
@@ -20,8 +20,10 @@ import project1_exterior_5 from "../assets/images/projects/Residential Villa/3d-
 // Project 2 images
 import project2_exterior_1 from "../assets/images/projects/Residential Complete Project/3d-exterior/VIEW 1.jpeg";
 import project2_exterior_2 from "../assets/images/projects/Residential Complete Project/3d-exterior/VIEW 2.jpeg";
-import project2_exterior_3 from "../assets/images/projects/Residential Complete Project/3d-exterior/VIEW 5.jpeg";
+import project2_exterior_3 from "../assets/images/projects/Residential Complete Project/3d-exterior/VIEW 3.jpeg";
 import project2_exterior_4 from "../assets/images/projects/Residential Complete Project/3d-exterior/VIEW 4.jpeg";
+import project2_exterior_5 from "../assets/images/projects/Residential Complete Project/3d-exterior/VIEW 5.jpeg";
+
 
 import project2_interior_1 from "../assets/images/projects/Residential Complete Project/3d-interior/Bed1.jpeg";
 import project2_interior_2 from "../assets/images/projects/Residential Complete Project/3d-interior/Bed2.png";
@@ -44,7 +46,10 @@ import project2_2d_11 from "../assets/images/projects/Residential Complete Proje
 
 
 // Project 3 images
-// import project3_2d from "../assets/images/projects/commercial-building-design/2d-detailing/project1-2d-1.jpg";
+// import project3_2d from "../assets/images/projects/Interior Material Palette/3d-interior/image_1.png";
+
+import project3_interior_1 from "../assets/images/projects/Interior Material Palette/3d-interior/image_1.png";
+
 
 // Project 4 images
 // import project4_2d from "../assets/images/projects/residential-floor-plan/2d-detailing/project1-2d-1.jpg";
@@ -80,7 +85,7 @@ const projects = [
 
     categoryImages: {
       "2D Detailing": [project2_2d_1, project2_2d_2, project2_2d_3, project2_2d_4, project2_2d_5, project2_2d_6, project2_2d_7, project2_2d_8, project2_2d_9, project2_2d_10, project2_2d_11],
-      "3D Exterior": [project2_exterior_1, project2_exterior_2, project2_exterior_3, project2_exterior_4],
+      "3D Exterior": [project2_exterior_1, project2_exterior_2, project2_exterior_3, project2_exterior_4, project2_exterior_5],
       "3D Interior": [project2_interior_1, project2_interior_2, project2_interior_3, project2_interior_4],
     },
 
@@ -91,21 +96,23 @@ const projects = [
     slug: "detail-work",
   },
 
-  // {
-  //   id: 3,
-  //   title: "Duplex Exterior",
-  //   category: "3D Visualization",
-  //   image: project3,
+  {
+    id: 3,
+    title: "Interior Material Palette(Client Project)",
+    category: "Architectural",
+    image: project3,
 
-  //   categoryImages: {
-  //     "2D Detailing": [],
-  //   },
+    categoryImages: {
+      "2D Detailing": [],
+      "3D Interior": [project3_interior_1],
+    },
 
-  //   software: ["AutoCAD", "SketchUp", "V-Ray"],
-  //   description:
-  //     "A contemporary two-storey residential duplex exterior with a minimalist facade, open terraces, spacious balconies, glazing, landscaping, and privacy-focused boundary design.",
-  //   slug: "duplex-exterior",
-  // },
+    pdf: "/project-pdfs/Interior_Material_Presentation.pdf",
+    software: ["3ds-max", "V-Ray"],
+    description:
+      "MATERIAL PALETTE & FINISH A considered specification for 20 architectural interior render views - with materials sourced or fabricated within Pakistan.",
+    slug: "duplex-exterior",
+  },
 
   // {
   //   id: 4,

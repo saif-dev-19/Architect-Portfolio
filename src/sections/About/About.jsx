@@ -71,18 +71,13 @@ const About = () => {
 
           <Box className="about-details">
             <Text className="about-intro">
-              I am Saif Ullah Saiful, an OSP Design &
-              Drafting Specialist with experience in
-              architectural drafting and 3D visualization.
+              3+ Years in AutoCAD | Revit | SketchUp | 3ds Max | V-Ray.
+Structural & Architectural Draftsman | 3D Visualizer.
+
             </Text>
 
             <Text className="about-description">
-              I design FTTH fiber optic networks and OSP
-              infrastructure, prepare permit drawings and
-              engineering documentation, and create accurate
-              architectural floor plans and construction
-              drawings using AutoCAD, Revit, SketchUp,
-              3ds Max, and V-Ray.
+              Specialized in architectural & structural drafting, construction drawings, 3D exterior & interior visualization, and Revit modeling.
             </Text>
 
             <Text className="about-description">

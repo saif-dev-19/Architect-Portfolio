@@ -123,7 +123,7 @@ const Hero = () => {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/saifullah-saiful"
+            href="https://www.linkedin.com/in/saif-ullah-architect/"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
