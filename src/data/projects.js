@@ -72,7 +72,7 @@ const projects = [
       "3D Interior": [project2_interior_1, project2_interior_2, project2_interior_3, project2_interior_4],
     },
 
-    pdf: "/project-pdfs/residential-building.pdf",
+    // pdf: "/project-pdfs/residential-building.pdf",
     software: ["AutoCAD", "SketchUp", "V-Ray"],
     description:
       "A functional and modern residential shed house in Nanggolkot, Cumilla, with architectural planning, structural and detailed drafting, 3D modeling, and exterior visualization.",
