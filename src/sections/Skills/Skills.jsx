@@ -29,14 +29,14 @@ const technicalSkills = [
 ];
 
 const software = [
-  { id: 1, name: "AutoCAD", logo: "/logos/autocad.svg", category: "Engineering & Drafting" },
-  { id: 2, name: "Revit Architecture", logo: "/logos/revit.svg", category: "BIM Software" },
-  { id: 3, name: "SketchUp", logo: "/logos/sketchup.svg", category: "3D Modeling" },
-  { id: 4, name: "3ds Max", logo: "/logos/3ds-max.svg", category: "3D Modeling" },
+  { id: 1, name: "AutoCAD", logo: "/logos/autocad.jpg", category: "Engineering & Drafting" },
+  { id: 2, name: "Revit Architecture", logo: "/logos/revit.jpg", category: "BIM Software" },
+  { id: 3, name: "SketchUp", logo: "/logos/sketchup.jpg", category: "3D Modeling" },
+  { id: 4, name: "3ds Max", logo: "/logos/3ds-max.jpg", category: "3D Modeling" },
 ];
 
 const tools = [
-  { id: 1, name: "V-Ray", logo: "/logos/vray.svg", category: "Rendering" },
+  { id: 1, name: "V-Ray", logo: "/logos/vray.jpg", category: "Rendering" },
   { id: 2, name: "Adobe Photoshop", logo: "/logos/photoshop.svg", category: "Image Editing" },
   { id: 3, name: "MS Project", logo: "/logos/ms-project.svg", category: "Project Management" },
   { id: 4, name: "Microsoft Word", logo: "/logos/word.svg", category: "Office Application" },

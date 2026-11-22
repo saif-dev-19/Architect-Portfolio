@@ -28,7 +28,7 @@ const Navbar = () => {
     <Box as="nav" className="navbar">
       <Flex className="navbar-container" align="center" justify="space-between">
         <Text className="navbar-logo">
-          ENG<span>.</span>
+          Saif<span>.</span>
         </Text>
 
         <HStack className="navbar-links">
