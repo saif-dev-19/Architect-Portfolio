@@ -28,6 +28,18 @@ import project2_interior_2 from "../assets/images/projects/Residential Complete 
 import project2_interior_3 from "../assets/images/projects/Residential Complete Project/3d-interior/Bed3.png";
 import project2_interior_4 from "../assets/images/projects/Residential Complete Project/3d-interior/Living room.png";
 
+import project2_2d_1 from "../assets/images/projects/Residential Complete Project/2d-detailing/2d_1.png";
+import project2_2d_2 from "../assets/images/projects/Residential Complete Project/2d-detailing/2d_2.png";
+import project2_2d_3 from "../assets/images/projects/Residential Complete Project/2d-detailing/2d_3.png";
+import project2_2d_4 from "../assets/images/projects/Residential Complete Project/2d-detailing/2d_4.png";
+import project2_2d_5 from "../assets/images/projects/Residential Complete Project/2d-detailing/2d_5.png";
+import project2_2d_6 from "../assets/images/projects/Residential Complete Project/2d-detailing/2d_6.png";
+import project2_2d_7 from "../assets/images/projects/Residential Complete Project/2d-detailing/2d_7.png";
+import project2_2d_8 from "../assets/images/projects/Residential Complete Project/2d-detailing/2d_8.png";
+import project2_2d_9 from "../assets/images/projects/Residential Complete Project/2d-detailing/2d_9.png";
+import project2_2d_10 from "../assets/images/projects/Residential Complete Project/2d-detailing/2d_10.png";
+import project2_2d_11 from "../assets/images/projects/Residential Complete Project/2d-detailing/2d_11.png";
+
 
 
 
@@ -67,7 +79,7 @@ const projects = [
     image: project2,
 
     categoryImages: {
-      "2D Detailing": [],
+      "2D Detailing": [project2_2d_1, project2_2d_2, project2_2d_3, project2_2d_4, project2_2d_5, project2_2d_6, project2_2d_7, project2_2d_8, project2_2d_9, project2_2d_10, project2_2d_11],
       "3D Exterior": [project2_exterior_1, project2_exterior_2, project2_exterior_3, project2_exterior_4],
       "3D Interior": [project2_interior_1, project2_interior_2, project2_interior_3, project2_interior_4],
     },
