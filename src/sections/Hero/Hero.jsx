@@ -52,9 +52,14 @@ const Hero = () => {
         Explore My Projects <ArrowRight size={17} />
       </Button>
 
-      <Button className="hero-secondary-btn">
+      <a
+        href="/saif-cv.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hero-secondary-btn"
+      >
         <Download size={17} /> Download CV
-      </Button>
+      </a>
     </Flex>
   </Box>
 
