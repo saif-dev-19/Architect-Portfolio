@@ -5,27 +5,19 @@ import "./Education.css";
 const educationData = [
   {
     id: 1,
-    degree: "Bachelor of Science",
+    degree: "Diploma in Engineering",
     subject: "Civil Engineering",
-    institution: "University Name",
-    period: "2022 – Present",
-    status: "Currently Studying",
+    institution: "Institute of Computer Science & Technology (ICST)",
+    period: "2023",
+    status: "Completed · CGPA 3.68/4.00",
   },
   {
     id: 2,
-    degree: "Higher Secondary Certificate",
-    subject: "Science",
-    institution: "College Name",
-    period: "2019 – 2021",
-    status: "Completed",
-  },
-  {
-    id: 3,
     degree: "Secondary School Certificate",
     subject: "Science",
-    institution: "School Name",
-    period: "2017 – 2019",
-    status: "Completed",
+    institution: "Feni Laboratory High School",
+    period: "2019",
+    status: "Completed · GPA 3.67/5.00",
   },
 ];
 

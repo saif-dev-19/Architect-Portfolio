@@ -26,10 +26,13 @@ const Navbar = () => {
 
   return (
     <Box as="nav" className="navbar">
-      <Flex className="navbar-container" align="center" justify="space-between">
-        <Text className="navbar-logo">
-          Saif<span>.</span>
-        </Text>
+    <Flex className="navbar-container" align="center" justify="space-between">
+      <Text className="navbar-logo">
+        <span className="logo-mark">S</span>
+        <span className="logo-text">
+          SAIF<span className="logo-accent">.</span>
+        </span>
+      </Text>
 
         <HStack className="navbar-links">
           {navLinks.map((link) => (

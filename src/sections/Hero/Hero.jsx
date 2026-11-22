@@ -1,4 +1,4 @@
-// import profileImage from "../../assets/images/profile.png";
+import profileImage from "../../assets/images/profile.png";
 import { Box, Flex, Text, Button } from "@chakra-ui/react";
 // Lucide icons
 import {
@@ -14,7 +14,6 @@ import {
 import {
   FaEnvelope,
   FaLinkedinIn,
-  FaFacebookF,
 } from "react-icons/fa";
 
 import "./Hero.css";
@@ -27,54 +26,55 @@ const Hero = () => {
         {/* Architectural background and lighting */}
       </Box>
 
-      <Box className="hero-inner">
+<Box className="hero-inner">
 
-        {/* Left: Replaceable portrait */}
-        <Box className="hero-portrait">
-          <Box className="portrait-frame">
-            <img
-              src=''
-              alt="Civil Engineer"
-              className="portrait-image"
-            />
-          </Box>
-        </Box>
+  {/* Left: Introduction */}
+  <Box className="hero-content">
+    <Text className="hero-label">
+      <span className="hero-label-line"></span>
+      CIVIL ENGINEER
+    </Text>
 
-        {/* Center: Introduction */}
-        <Box className="hero-content">
-          <Text className="hero-label">
-            CIVIL ENGINEER
-          </Text>
+    <Text className="hero-title">
+      SAIF ULLAH
+      <br />
+      <span>SAIFUL</span>
+    </Text>
 
-          <Text className="hero-title">
-            Designing a
-            <br />
-            <span>Stronger Tomorrow</span>
-          </Text>
+    <Text className="hero-description">
+      Specialized in FTTH and OSP design,
+      permit drawings, architectural drafting,
+      construction documentation, and 3D visualization.
+    </Text>
 
-          <Text className="hero-description">
-            I'm a Civil Engineer specializing in modern
-            architectural and structural design using
-            advanced engineering software.
-          </Text>
+    <Flex className="hero-actions">
+      <Button className="hero-primary-btn">
+        Explore My Projects <ArrowRight size={17} />
+      </Button>
 
-          <Flex className="hero-actions">
-            <Button className="hero-primary-btn">
-              View My Projects <ArrowRight size={17} />
-            </Button>
+      <Button className="hero-secondary-btn">
+        <Download size={17} /> Download CV
+      </Button>
+    </Flex>
+  </Box>
 
-            <Button className="hero-secondary-btn">
-              <Download size={17} /> Download CV
-            </Button>
-          </Flex>
-        </Box>
+  {/* Right: Profile Portrait */}
+  <Box className="hero-portrait">
+    <Box className="portrait-frame">
+      <img
+        src={profileImage}
+        alt="Saifullah Saiful - Civil Engineer"
+        className="portrait-image"
+      />
+    </Box>
+  </Box>
 
-        {/* Right: Architectural building */}
-        <Box className="hero-building">
-          {/* Building visual goes here */}
-        </Box>
+  {/* Architectural Background */}
+  <Box className="hero-building">
+    <Box className="building-overlay" />
+  </Box>
 
-      </Box>
+</Box>
 
       {/* Bottom statistics */}
       <Flex className="hero-bottom">
@@ -89,22 +89,22 @@ const Hero = () => {
             <Landmark />
             <Box>
               <Text className="stat-number">3+</Text>
-              <Text className="stat-label">Years of Learning</Text>
+              <Text className="stat-label">Years of Experience</Text>
             </Box>
           </Box>
 
           <Box className="stat-item">
             <Folder />
             <Box>
-              <Text className="stat-number">20+</Text>
-              <Text className="stat-label">Projects Completed</Text>
+              <Text className="stat-number">6</Text>
+              <Text className="stat-label">Featured Projects</Text>
             </Box>
           </Box>
 
           <Box className="stat-item">
             <Wrench />
             <Box>
-              <Text className="stat-number">5+</Text>
+              <Text className="stat-number">8+</Text>
               <Text className="stat-label">Software Expertise</Text>
             </Box>
           </Box>
@@ -113,26 +113,17 @@ const Hero = () => {
         {/* Social links */}
 
         <Flex className="hero-socials">
-          <a href="mailto:your@email.com" aria-label="Email">
+          <a href="mailto:saifullahkds@gmail.com" aria-label="Email">
             <FaEnvelope />
           </a>
 
           <a
-            href="https://linkedin.com/in/your-profile"
+            href="https://www.linkedin.com/in/saifullah-saiful"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"
           >
             <FaLinkedinIn />
-          </a>
-
-          <a
-            href="https://facebook.com/your-profile"
-            target="_blank"
-            rel="noreferrer"
-            aria-label="Facebook"
-          >
-            <FaFacebookF />
           </a>
         </Flex>
 

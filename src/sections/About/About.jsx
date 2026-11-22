@@ -71,22 +71,26 @@ const About = () => {
 
           <Box className="about-details">
             <Text className="about-intro">
-              I am a Civil Engineer passionate about
-              architectural and structural design.
+              I am Saif Ullah Saiful, an OSP Design &
+              Drafting Specialist with experience in
+              architectural drafting and 3D visualization.
             </Text>
 
             <Text className="about-description">
-              My work focuses on creating accurate,
-              detailed and practical engineering drawings
-              using modern design software. I aim to
-              transform concepts into professional
-              technical solutions.
+              I design FTTH fiber optic networks and OSP
+              infrastructure, prepare permit drawings and
+              engineering documentation, and create accurate
+              architectural floor plans and construction
+              drawings using AutoCAD, Revit, SketchUp,
+              3ds Max, and V-Ray.
             </Text>
 
             <Text className="about-description">
-              From architectural planning to structural
-              detailing, I value precision, functionality
-              and thoughtful design in every project.
+              My portfolio includes residential buildings,
+              commercial interiors, detailed structural work,
+              and government building design. I value
+              functionality, precision, and practical design
+              in every project.
             </Text>
 
             <a href="#projects" className="about-link">

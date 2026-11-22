@@ -14,19 +14,19 @@ const contactInfo = [
   {
     icon: Mail,
     label: "Email Address",
-    value: "safebd7@gmail.com",
-    link: "mailto:safebd7@gmail.com",
+    value: "saifullahkds@gmail.com",
+    link: "mailto:saifullahkds@gmail.com",
   },
   {
     icon: Phone,
     label: "Phone Number",
-    value: "+880 1XXXXXXXXX",
-    link: "tel:+8801XXXXXXXXX",
+    value: "+88 01637001339",
+    link: "tel:+8801637001339",
   },
   {
     icon: MapPin,
     label: "Location",
-    value: "Dhaka, Bangladesh",
+    value: "Mirpur, Dhaka, Bangladesh",
     link: null,
   },
 ];
@@ -55,7 +55,7 @@ const Contact = () => {
     const subject = formData.get("subject");
     const message = formData.get("message");
 
-    const mailtoLink = `mailto:safebd7@gmail.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:saifullahkds@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\n${message}`

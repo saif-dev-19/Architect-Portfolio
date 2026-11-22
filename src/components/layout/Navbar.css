@@ -17,10 +17,54 @@
 }
 
 .navbar-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.logo-mark {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-family: "Playfair Display", serif;
+  font-size: 29px;
   font-weight: 700;
+  color: #d8b779;
+
+  background: #021224;
+  border: 1px solid #c9a96a;
+  border-radius: 4px;
+
+  box-shadow: 0 0 12px rgba(201, 169, 106, 0.15);
+  transition: all 0.3s ease;
+}
+
+.logo-text {
+  font-family: "Playfair Display", serif;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: 3px;
   color: #f5f5f5;
+}
+
+.logo-accent {
+  color: #c9a96a;
+  font-size: 30px;
+}
+
+.navbar-logo:hover .logo-mark {
+  box-shadow: 0 0 25px rgba(201, 169, 106, 0.35);
+  transform: skew(-4deg) translateY(-2px);
+}
+
+.navbar-logo:hover .logo-text {
+  letter-spacing: 3.5px;
 }
 
 .navbar-logo span {

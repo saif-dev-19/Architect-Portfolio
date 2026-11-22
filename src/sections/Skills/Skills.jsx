@@ -15,6 +15,8 @@ const technicalSkills = [
       "Construction Drawings",
       "OSP Design & Drafting",
       "Permit Drawings",
+      "FTTH Network Design",
+      "Drawing Revision & QA/QC",
     ],
   },
   {
